@@ -11,7 +11,7 @@ return [
     |
     */
 
-    'namespace' => 'Modules',
+    'namespace' => 'APP\Modules',
 
     /*
     |--------------------------------------------------------------------------
@@ -61,7 +61,7 @@ return [
         |
         */
 
-        'modules' => base_path('Modules'),
+        'modules' => base_path('app/Modules'),
         /*
         |--------------------------------------------------------------------------
         | Modules assets path
@@ -99,7 +99,7 @@ return [
             'event' => 'Events',
             'listener' => 'Listeners',
             'migration' => 'Database/Migrations',
-            'model' => 'Entities',
+            'model' => 'Models',
             'repository' => 'Repositories',
             'seeder' => 'Database/Seeders',
             'controller' => 'Http/Controllers',
