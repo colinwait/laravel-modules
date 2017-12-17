@@ -430,7 +430,7 @@ class ModuleGenerator extends Generator
      */
     protected function getLowerNameReplacement()
     {
-        return strtolower($this->getName());
+        return strtolower(snake_case($this->getName()));
     }
 
     /**

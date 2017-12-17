@@ -79,7 +79,7 @@ class Module extends ServiceProvider
      */
     public function getLowerName()
     {
-        return strtolower($this->name);
+        return strtolower(snake_case($this->name));
     }
 
     /**

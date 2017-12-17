@@ -316,7 +316,7 @@ class Repository implements RepositoryInterface, Countable
     public function find($name)
     {
         foreach ($this->all() as $module) {
-            if ($module->getLowerName() === strtolower($name)) {
+            if ($module->getLowerName() === strtolower(snake_case($name))) {
                 return $module;
             }
         }
